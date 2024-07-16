@@ -37,4 +37,9 @@ public class gumballSold implements State{
             gumballMachine.setState(gumballMachine.getOutOfGumball());
         }
     }
+
+    @Override
+    public void choose(String flavor) {
+        System.out.println("Please insert quarter before choosing flavor!");
+    }
 }

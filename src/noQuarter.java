@@ -26,4 +26,9 @@ public class noQuarter implements State{
     public void dispenseGumball() {
         System.out.println("Please pay first");
     }
+
+    @Override
+    public void choose(String flavor) {
+        System.out.println("Please insert quarter before choosing flavor");
+    }
 }

@@ -4,4 +4,5 @@ public interface State {
     void ejectQuarter();
     void turnCrank();
     void dispenseGumball();
+    void choose(String flavor);
 }

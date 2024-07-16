@@ -26,4 +26,10 @@ public class hasQuarter implements State{
     public void dispenseGumball() {
         //nothing
     }
+
+    @Override
+    public void choose(String flavor) {
+        System.out.println("You have chosen the flavor " + flavor);
+        gumballMachine.addFlavor(flavor);
+    }
 }
